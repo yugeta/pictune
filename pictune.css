@@ -1,0 +1,73 @@
+#pictune{
+  position:fixed;
+  top:0;
+  left:0;
+  margin:0;
+  padding:0;
+  border:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.8);
+  display:none;
+  text-align:center;
+}
+
+#pictune .pictune-area{
+  z-index:1;
+  /* position:fixed; */
+  display:inline-block;
+  /* top:100px;
+  left:100px; */
+  margin:60px auto 0;
+  padding:0;
+  border:4px solid white;
+  /* width:90%;
+  height:70%; */
+  background-color:white;
+  border-radius:8px;
+}
+  #pictune .pictune-area img.picture{
+    z-index:1;
+    max-width:98%;
+    max-height:90%;
+    display:block;
+    margin:0 auto;
+    padding:0;
+    border-radius:8px;
+    margin-top:-24px;
+  }
+
+#pictune .pictune-close{
+  z-index:10;
+  margin:0;
+  padding:0;
+  border:0;
+  position:relative;
+  top:-34px;
+  left:0px;
+  width:24px;
+  height:24px;
+  cursor:pointer;
+}
+#pictune .pictune-close:hover{
+  opacity:0.5;
+}
+#pictune .pictune-close:before,
+#pictune .pictune-close:after{
+  content:"";
+  margin:0 auto;
+  padding:0;
+  border:0;
+  position:absolute;
+  top:14px;
+  left:0;
+  width:100%;
+  height:4px;
+  background-color:white;
+}
+#pictune .pictune-close:before{
+  transform:rotate(45deg);
+}
+#pictune .pictune-close:after{
+  transform:rotate(-45deg);
+}
